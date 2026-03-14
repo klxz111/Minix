@@ -1,0 +1,95 @@
+.
+├── clean_lstm_metrics.py
+├── configs
+│   ├── lstm.yaml
+│   ├── mamba.yaml
+│   └── tranformer.yaml
+├── create_config.py
+├── create_lstm_config.py
+├── create_mamba_config.py
+├── data
+│   └── tinyshakespeare
+│       ├── input.txt
+│       └── meta.json
+├── final_clean_loss_comparison.png
+├── generate_comparison_final.py
+├── .gitignore
+├── lstm_visualization.py
+├── models_saved
+│   ├── lstm_epoch1_best.pt
+│   └── lstm_epoch5_best.pt
+├── outputs
+│   ├── lstm
+│   │   ├── best.pt
+│   │   ├── config.json
+│   │   ├── config.pt
+│   │   ├── last.pt
+│   │   ├── lstm_visualization.png
+│   │   ├── meta.json
+│   │   └── metrics.jsonl
+│   ├── lstm_earlystop
+│   │   └── metrics_clean.jsonl
+│   ├── mamba
+│   │   ├── best.pt
+│   │   ├── config.json
+│   │   ├── config.pt
+│   │   ├── last.pt
+│   │   ├── meta.json
+│   │   └── metrics.jsonl
+│   └── transformer
+│       ├── best.pt
+│       ├── config.json
+│       ├── config.pt
+│       ├── last.pt
+│       ├── meta.json
+│       └── metrics.jsonl
+├── plot_final_clean.py
+├── plot_loss.py
+├── README.md
+├── run_all.sh
+├── scripts
+│   └── run_transformer_mamba.sh
+├── src
+│   ├── benchmark.py
+│   ├── create_config.py
+│   ├── data
+│   │   ├── char_dataset.py
+│   │   ├── __init__.py
+│   │   ├── prepare_tinyshakespeare.py
+│   │   ├── __pycache__
+│   │   │   ├── char_dataset.cpython-312.pyc
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── prepare_tinyshakespeare.cpython-312.pyc
+│   │   │   └── vocab.cpython-312.pyc
+│   │   └── vocab.py
+│   ├── evaluate.py
+│   ├── generate.py
+│   ├── generate_simple.py
+│   ├── __init__.py
+│   ├── models
+│   │   ├── __init__.py
+│   │   ├── lstm_lm.py
+│   │   ├── mamba_lm.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── lstm_lm.cpython-312.pyc
+│   │   │   ├── mamba_lm.cpython-312.pyc
+│   │   │   └── transformer_lm.cpython-312.pyc
+│   │   └── transformer_lm.py
+│   ├── __pycache__
+│   │   ├── benchmark.cpython-312.pyc
+│   │   ├── evaluate.cpython-312.pyc
+│   │   ├── generate.cpython-312.pyc
+│   │   ├── __init__.cpython-312.pyc
+│   │   ├── train.cpython-312.pyc
+│   │   └── utils.cpython-312.pyc
+│   ├── run_all.sh
+│   ├── run_lstm.sh
+│   ├── run_mamba.sh
+│   ├── run_transformer.sh
+│   ├── train.py
+│   └── utils.py
+├── summarize_metrics.py
+└── visualize_generation.py
+
+17 directories, 76 files
