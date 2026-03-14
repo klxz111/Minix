@@ -30,7 +30,7 @@ python -m src.train --config configs/transformer.yaml
 python -m src.train --config configs/mamba.yaml
 ```
 
-![image-20260314110404990](C:\Users\LHYZYRX\AppData\Roaming\Typora\typora-user-images\image-20260314110404990.png)
+
 
 ### 📊 三模型训练结果对比表（基于最终数据）
 
