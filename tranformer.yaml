@@ -1,0 +1,36 @@
+seed: 42
+run_name: transformer
+output_dir: outputs/transformer
+
+data:
+  root: data/tinyshakespeare
+  block_size: 256
+  batch_size: 64
+  num_workers: 0
+
+model:
+  name: transformer
+  d_model: 256
+  n_head: 8
+  n_layer: 4
+  mlp_ratio: 4
+  dropout: 0.2
+  attn_impl: flash      # flash / sdpa
+  tie_weights: true
+
+train:
+  max_epochs: 10
+  lr: 3.0e-4
+  min_lr: 3.0e-5
+  weight_decay: 0.01
+  warmup_steps: 500
+  eval_interval: 200
+  eval_batches: 50
+  grad_clip: 1.0
+  amp: true
+  amp_dtype: float16
+  save_best_only: true
+  early_stop_patience: 10
+
+system:
+  device: cuda

@@ -1,0 +1,30 @@
+seed: 42
+run_name: lstm
+output_dir: outputs/lstm
+
+data:
+  root: data/tinyshakespeare
+  block_size: 256
+  batch_size: 64
+  num_workers: 2
+
+model:
+  name: lstm
+  d_model: 256
+  n_layer: 2
+  dropout: 0.1
+
+train:
+  max_epochs: 5
+  lr: 3.0e-4
+  weight_decay: 0.01
+  eval_interval: 200
+  eval_batches: 50
+  grad_clip: 1.0
+  amp: true
+  amp_dtype: float16
+  early_stop_patience: 2    # tiny_shakespeare 建议设为2
+  early_stop_min_delta: 0.001
+
+system:
+  device: cuda
